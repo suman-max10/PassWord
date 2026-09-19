@@ -28,47 +28,45 @@ const App = () => {
   };
 
   return (
-    <main className="min-h-screen bg-slate-900 px-4 py-8 text-white">
-      <div className="mx-auto w-full max-w-md rounded-lg bg-slate-800 p-4 shadow-md">
-        <h1 className="my-3 text-center text-2xl font-bold text-orange-500">
+    <main className='min-h-screen bg-slate-900 px-4 py-8 text-white'>
+      <div className='mx-auto w-full max-w-md rounded-lg bg-slate-800 p-4 shadow-md'>
+        <h1 className='my-3 text-center text-2xl font-bold text-orange-500'>
           Password Generator
         </h1>
-        <div className="mb-4 flex overflow-hidden rounded-lg shadow">
+        <div className='mb-4 flex overflow-hidden rounded-lg shadow'>
           <input
-            type="text"
+            type='text'
             value={password}
-            className="w-full px-3 py-2 text-slate-900 outline-none"
-            placeholder="Password"
+            className='w-full px-3 py-2 text-slate-900 outline-none'
+            placeholder='Password'
             readOnly
           />
           <button
-            className="shrink-0 bg-blue-700 px-3 py-2 text-white hover:bg-blue-600"
-            onClick={copyPassword}
-          >
+            className='shrink-0 bg-blue-700 px-3 py-2 text-white hover:bg-blue-600'
+            onClick={copyPassword}>
             Copy
           </button>
         </div>
         <button
-          className="mb-4 w-full rounded bg-orange-500 px-3 py-2 font-semibold text-slate-900 hover:bg-orange-400"
-          onClick={passwordGenerator}
-        >
+          className='mb-4 w-full rounded bg-orange-500 px-3 py-2 font-semibold text-slate-900 hover:bg-orange-400'
+          onClick={passwordGenerator}>
           Generate Password
         </button>
-        <label className="mb-4 block">
+        <label className='mb-4 block'>
           Length: {length}
           <input
-            className="mt-2 w-full accent-orange-500"
-            type="range"
-            min="4"
-            max="32"
+            className='mt-2 w-full accent-orange-500'
+            type='range'
+            min='4'
+            max='32'
             value={length}
             onChange={(event) => setLength(Number(event.target.value))}
           />
         </label>
-        <label className="mr-4">
+        <label className='mr-4'>
           <input
-            className="mr-2"
-            type="checkbox"
+            className='mr-2'
+            type='checkbox'
             checked={numberAllowed}
             onChange={(event) => setNumberAllowed(event.target.checked)}
           />
@@ -76,8 +74,8 @@ const App = () => {
         </label>
         <label>
           <input
-            className="mr-2"
-            type="checkbox"
+            className='mr-2'
+            type='checkbox'
             checked={charAllowed}
             onChange={(event) => setCharAllowed(event.target.checked)}
           />
