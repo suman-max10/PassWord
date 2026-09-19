@@ -1,4 +1,7 @@
 <!-- @format -->
+## Live Demo 
+
+https://react-random-pasword-generator.netlify.app/
 
 # Password Generator
 
