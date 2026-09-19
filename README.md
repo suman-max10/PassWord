@@ -1,16 +1,76 @@
-# React + Vite
+<!-- @format -->
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Password Generator
 
-Currently, two official plugins are available:
+A simple password generator built with React, Vite, and Tailwind CSS. Generate passwords with a configurable length and optional numbers or special characters, then copy the result to your clipboard.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Generate passwords from 4 to 32 characters
+- Include numbers optionally
+- Include special characters optionally
+- Copy the generated password to the clipboard
+- Responsive, dark-themed interface
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React 19
+- Vite
+- Tailwind CSS
+- ESLint
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18 or newer
+- npm
+
+### Installation
+
+1. Clone the repository and move into the project directory.
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open the local URL shown in the terminal, usually `http://localhost:5173`.
+
+## Available Scripts
+
+| Command           | Description                          |
+| ----------------- | ------------------------------------ |
+| `npm run dev`     | Start the Vite development server    |
+| `npm run build`   | Create a production build            |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint`    | Run ESLint                           |
+
+## How It Works
+
+1. Choose a password length with the slider.
+2. Enable numbers or special characters as needed.
+3. Select **Generate Password**.
+4. Select **Copy** to copy the generated password.
+
+The generator starts with uppercase and lowercase letters, then adds the selected character sets before choosing random characters until the requested length is reached.
+
+## Project Structure
+
+```text
+src/
+├── App.jsx       # Password generator UI and logic
+├── index.css     # Tailwind CSS entry point
+└── main.jsx      # React application entry point
+```
+
+## License
+
+This project is for learning and personal use.
