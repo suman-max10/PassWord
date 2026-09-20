@@ -30,6 +30,7 @@ const App = () => {
   };
 
   return (
+
     <main className='min-h-screen bg-slate-900 px-4 py-8 text-white'>
       <div className='mx-auto w-full max-w-md rounded-lg bg-slate-800 p-4 shadow-md'>
         <h1 className='my-3 text-center text-2xl font-bold text-orange-500'>
