@@ -15,6 +15,8 @@ const App = () => {
     if (numberAllowed) str += "0123456789";
     if (charAllowed) str += "!@#$%^&*()_+-=[]{}|;:',.<>/?";
 
+
+
     for (let index = 0; index < length; index += 1) {
       const characterIndex = Math.floor(Math.random() * str.length);
       pass += str.charAt(characterIndex);
